@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>khushiya</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <!--Navbar Section-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">Welcome</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="#home" class="navbar__links" id="home-page">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#about" class="navbar__links" id="about-page">About</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#services" class="navbar__links" id="services-page">Activities</a>
+      </li>
+      <li class="navbar__btn">
+        <a href="#sign-up" class="button" id="signup">Sign up</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">Be the Reason of Millions of <span>Smile</span> </h1>
+      <p class="hero__description">Explore the Khushiya</p>
+      <button class="main__btn"><a href="./index.html" target="_blank">Explore</a></button>
+    </div>
+  </div>
+
+  <!-- About Section  -->
+  <div class="main" id="about">
+    <div class="main__container">
+      <div class="main__img--container">
+        <div class="main__img--card"><i class="fas fa-laptop-code"></i></div>
+      </div>
+      <div class="main__content">
+        <h1>What I do?</h1>
+        <h2>How can I help and what is my contributions!</h2>
+        <p>Contact me to know more</p>
+        <button class="main__btn"><a href="#">Contact Me</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Activities Section -->
+  <div class="services" id="services">
+    <h1> Activities</h1>
+    <div class="services__wrapper">
+      <div class="services__card">
+        <h2>Protection</h2>
+        <p>Safety and Security</p>
+        <div class="services__btn"><button>Know More</button></div>
+      </div>
+      <div class="services__card">
+        <h2>Education</h2>
+        <p>Carrier Counselling and Guidance</p>
+        <div class="services__btn"><button>Know More</button></div>
+      </div>
+      <div class="services__card">
+        <h2>Animal Rescue</h2>
+        <p>Rescues, Treatments, Adoption and Shelter</p>
+        <div class="services__btn"><button>Know More</button></div>
+      </div>
+      <div class="services__card">
+        <h2>Social Welfare</h2>
+        <p>Events and Camps</p>
+        <div class="services__btn"><button>Know More</button></div>
+      </div>
+      <div class="services__card">
+        <h2>Environment</h2>
+        <p>Tree planatation and Save Soil</p>
+        <div class="services__btn"><button>Know More</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature Section -->
+  <div class="main" id="sign-up">
+    <div class="main__container">
+
+      <div class="main__content">
+        <h1>Join me</h1>
+        <h2>Sign Up Today</h2>
+        <p>Lets make difference</p>
+        <!-- Button trigger modal -->
+        <button class="main__btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="#modal">Sign up</a>
+        </button>
+      </div>
+
+      <div class="main__img--container">
+        <div class="main__img--card" id="card-2"><i class="fas fa-users"></i></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Sign Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="myForm">
+            <div class="form-group">
+              <label class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label">Mobile:</label>
+              <input type="text" class="form-control" id="mobile">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- message Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Thank you, we will connect with you soon!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About me</h2>
+          <a href="/sign-up">How I work</a>
+          <a href="/sign-up">Testimonials</a>
+          <a href="/sign-up">Join team</a>
+          <a href="/sign-up">Terms of Service</a>
+        </div>
+
+        <div class="footer__link--items">
+          <h2>Contact me</h2>
+          <a href="/sign-up">Mobile</a>
+          <a href="/sign-up">Email</a>
+
+        </div>
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo">Home</a>
+        </div>
+        <p class="website__rights">© Vishall 2021. All rights reserved</p>
+        <div class="social__icons">
+          <a href="/" target="_blank" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCmOvBRxKRCDpYBSKwvFd-Ug" class="social__icon--link"><i
+              class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
